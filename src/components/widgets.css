@@ -1,0 +1,10 @@
+.widget-body {
+    width: 95%;
+    height: 50%;
+    margin: 2% auto 3%;
+    background: rgb(55, 55, 55);
+    border-radius: 30px;
+    justify-content: space-evenly;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
