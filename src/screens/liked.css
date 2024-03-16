@@ -1,0 +1,69 @@
+.screen-container {
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.liked-body {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.song-card {
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.song-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 20%; /* Adjust border radius */
+    margin-right: 10px;
+}
+
+.song-info {
+    display: flex;
+    align-items: center; /* Vertically center content */
+    flex: 1; /* Take remaining space */
+}
+
+.song-title {
+    font-size: 24px;
+    font-weight: 800;
+    color: white;
+    width: 40%;
+    margin-right: auto;
+    margin-left: 25px;
+    text-align: left;
+}
+
+.song-artist {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(163, 163, 163);
+    margin-left: 25px;
+    width: 40%;
+    margin-right: 45px;
+}
+
+.song-like {
+    color: red;
+    margin-right: 50px;
+}
+
+.song-duration {
+    font-size: 16px;
+    font-weight: 400;
+    color: #979797;
+    margin-left: auto;
+}

@@ -5,8 +5,7 @@ import Controls from './controls';
 import { useState } from 'react';
 
 
-
-export default function AudioPlayer({ currentTrack, currentIndex, setCurrentIndex, total }) {
+export default function AudioPlayer({ currentTrack, currentIndex=0, setCurrentIndex=0, total }) {
     const [isPlaying, setIsPlaying] = useState(false);
     const [trackProgress, setTrackProgress] = useState(0);
     var audioSrc = total[currentIndex]?.track?.preview_url;
@@ -95,7 +94,7 @@ export default function AudioPlayer({ currentTrack, currentIndex, setCurrentInde
         artists.push(artist.name);
     });
 
-  return (
+    return (
     <div className='player-body flex'>
         <div className='player-left-body'>
             <ProgressCircle percentage={currentPercentage} isPlaying={true} image={currentTrack?.album?.images[0]?.url} size={300} color="white"/>
@@ -112,5 +111,5 @@ export default function AudioPlayer({ currentTrack, currentIndex, setCurrentInde
             </div>
         </div>
     </div>
-  )
+    )
 }
